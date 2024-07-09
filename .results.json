@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 6,
+    "tests": 5,
+    "passes": 3,
+    "pending": 0,
+    "failures": 2,
+    "start": "2024-07-09T04:04:12.879Z",
+    "end": "2024-07-09T04:04:13.333Z",
+    "duration": 454
+  },
+  "tests": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function: toUpperCase] to equal 'BOB'",
+        "showDiff": true,
+        "expected": "BOB",
+        "stack": "AssertionError: expected [Function: toUpperCase] to equal 'BOB'\n    at Context.<anonymous> (test/indexTest.js:16:38)\n    at process.processImmediate (node:internal/timers:478:21)"
+      }
+    },
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'not bob' to equal undefined",
+        "showDiff": true,
+        "actual": "not bob",
+        "stack": "AssertionError: expected 'not bob' to equal undefined\n    at Context.<anonymous> (test/indexTest.js:21:38)\n    at process.processImmediate (node:internal/timers:478:21)"
+      }
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "modifies the customerName variable",
+      "fullTitle": "Fix the Scope upperCaseCustomerName() modifies the customerName variable",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected [Function: toUpperCase] to equal 'BOB'",
+        "showDiff": true,
+        "expected": "BOB",
+        "stack": "AssertionError: expected [Function: toUpperCase] to equal 'BOB'\n    at Context.<anonymous> (test/indexTest.js:16:38)\n    at process.processImmediate (node:internal/timers:478:21)"
+      }
+    },
+    {
+      "title": "setBestCustomer",
+      "fullTitle": "Fix the Scope setBestCustomer() setBestCustomer",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected 'not bob' to equal undefined",
+        "showDiff": true,
+        "actual": "not bob",
+        "stack": "AssertionError: expected 'not bob' to equal undefined\n    at Context.<anonymous> (test/indexTest.js:21:38)\n    at process.processImmediate (node:internal/timers:478:21)"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "returns the customerName",
+      "fullTitle": "Fix the Scope declare customerName to be bob in global scope returns the customerName",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "overwrites the best customer",
+      "fullTitle": "Fix the Scope overwriteBestCustomer() overwrites the best customer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "unsuccessfully tries to reassign the least favorite customer",
+      "fullTitle": "Fix the Scope changeLeastFavoriteCustomer() unsuccessfully tries to reassign the least favorite customer",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
